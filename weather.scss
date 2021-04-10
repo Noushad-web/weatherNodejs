@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;500;600&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+
+// background gradient 
+$bg-weather-primary : #5ac8fa;
+$bg-weather-secondary : #75e0fe;
+
+// box gradient 
+$bg-box-primary : #46d4ff;
+$bg-box-secondary : #76ecff;
+
+// text color 
+$text-weather-primary : #0e2029;
+$text-shadow-primary : #255066;
+
+
+p , span{
+    font-family: 'Signika', sans-serif;
+    color:$text-weather-primary;
+    letter-spacing: 1px;
+    // font-family: 'Merienda', cursive;
+}
+
+.wrapper-weather{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    // background: linear-gradient( 45deg ,  $bg-weather-primary , $bg-weather-secondary);
+    background-color: whitesmoke;
+
+
+    .container{
+
+
+        .box{
+            border: 2px solid rgba(133, 71, 71, 0.3);
+            background: linear-gradient(0deg, $bg-box-primary , $bg-box-secondary);
+            box-shadow: 0 .5em .5em rgba(0,0,0,0.1);
+            padding: 1em;
+            margin: auto;
+            width: 40%;
+            border-radius: 1em;
+            position: relative;
+            overflow: hidden;
+
+            .weather-icon{
+
+                & img{
+                    filter: drop-shadow( 0 0px 10px rgba(0,0,0,0.2));
+                }
+            }
+
+            .weather-detail{
+
+                & span{
+                    color:$text-weather-primary;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    font-size: 1.3rem;
+                    text-shadow: 0 1px 1px $text-shadow-primary;
+                }
+
+                .temp > *{
+                    font-size: 3.5rem;
+                    text-shadow: 0 2px 2px $text-shadow-primary;
+                    
+                }
+
+                
+
+
+            }
+
+        
+        }
+    }
+}

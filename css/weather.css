@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@400;500;600&display=swap");
+p, span {
+  font-family: 'Signika', sans-serif;
+  color: #0e2029;
+  letter-spacing: 1px;
+}
+
+.wrapper-weather {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: whitesmoke;
+}
+
+.wrapper-weather .container .box {
+  border: 2px solid rgba(133, 71, 71, 0.3);
+  background: -webkit-gradient(linear, left bottom, left top, from(#46d4ff), to(#76ecff));
+  background: linear-gradient(0deg, #46d4ff, #76ecff);
+  -webkit-box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  margin: auto;
+  width: 40%;
+  border-radius: 1em;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper-weather .container .box .weather-icon img {
+  -webkit-filter: drop-shadow(0 0px 10px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0 0px 10px rgba(0, 0, 0, 0.2));
+}
+
+.wrapper-weather .container .box .weather-detail span {
+  color: #0e2029;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+  text-shadow: 0 1px 1px #255066;
+}
+
+.wrapper-weather .container .box .weather-detail .temp > * {
+  font-size: 3.5rem;
+  text-shadow: 0 2px 2px #255066;
+}
+/*# sourceMappingURL=weather.css.map */

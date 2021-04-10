@@ -1,0 +1,2 @@
+
+http://api.openweathermap.org/data/2.5/weather?q=Ludhiana&appid=3f2fc6590fd49a886500d3f35c92fb26
